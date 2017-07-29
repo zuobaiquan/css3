@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://simbyone.com/wp-content/uploads/2014/04/3455e6f65c33232a060c28829a49b1cb.png">
+<title>Page Preloading Effects</title>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href="_css/Icomoon/style.css" rel="stylesheet" type="text/css" />
+<link href="_css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="_scripts/jquery-2.0.2.min.js"></script>
+<script type="text/javascript" src="_scripts/main.js"></script>
+
+<style>
+#loading{
+	background-color: #ffd34e;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	margin-top: 0px;
+	top: 0px;
+}
+#loading-center{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	}
+#loading-center-absolute {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 200px;
+	width: 200px;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+.object{
+	width: 50px;
+	height: 50px;
+	background-color: rgba(255,255,255,0);
+	margin-right: auto;
+	margin-left: auto;
+	border: 4px solid #FFF;
+	left: 73px;
+	top: 73px;
+	position: absolute;
+}
+
+#first_object{
+	-webkit-animation: first_object_animate 1s infinite ease-in-out;
+	animation: first_object_animate 1s infinite ease-in-out;
+}
+	
+#second_object{
+	-webkit-animation: second_object 1s forwards, second_object_animate 1s infinite ease-in-out;
+	animation: second_object 1s forwards, second_object_animate 1s infinite ease-in-out;
+	}	
+#third_object{
+	-webkit-animation: third_object 1s forwards, third_object_animate 1s infinite ease-in-out;
+	animation: third_object 1s forwards, third_object_animate 1s infinite ease-in-out;
+	}	
+	
+	
+	
+@-webkit-keyframes second_object {
+ 100% { width: 100px; height:100px; left: 48px; top: 48px; }
+}		
+@keyframes second_object {
+100% { width: 100px; height:100px; left: 48px; top: 48px; }
+}
+
+
+@-webkit-keyframes third_object {
+ 100% { width: 150px; height:150px; left: 23px; top: 23px;}
+}		
+@keyframes third_object {
+100% { width: 150px; height:150px; left: 23px; top: 23px;}
+}
+
+
+
+
+
+
+@-webkit-keyframes first_object_animate {
+  0% { -webkit-transform: perspective(100px); }
+  50% { -webkit-transform: perspective(100px) rotateY(-180deg); }
+  100% { -webkit-transform: perspective(100px) rotateY(-180deg) rotateX(-180deg); }
+}
+
+@keyframes first_object_animate {
+  0% { 
+    transform: perspective(100px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(100px) rotateX(0deg) rotateY(0deg); 
+  } 50% { 
+    transform: perspective(100px) rotateX(-180deg) rotateY(0deg);
+    -webkit-transform: perspective(100px) rotateX(-180deg) rotateY(0deg) ;
+  } 100% { 
+    transform: perspective(100px) rotateX(-180deg) rotateY(-180deg);
+    -webkit-transform: perspective(100px) rotateX(-180deg) rotateY(-180deg);
+  }
+}
+
+
+
+@-webkit-keyframes second_object_animate {
+  0% { -webkit-transform: perspective(200px); }
+  50% { -webkit-transform: perspective(200px) rotateY(180deg); }
+  100% { -webkit-transform: perspective(200px) rotateY(180deg) rotateX(180deg); }
+}	
+
+
+@keyframes second_object_animate {
+  0% { 
+    transform: perspective(200px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(200px) rotateX(0deg) rotateY(0deg); 
+  } 50% { 
+    transform: perspective(200px) rotateX(180deg) rotateY(0deg);
+    -webkit-transform: perspective(200px) rotateX(180deg) rotateY(0deg) ;
+  } 100% { 
+    transform: perspective(200px) rotateX(180deg) rotateY(180deg);
+    -webkit-transform: perspective(200px) rotateX(180deg) rotateY(180deg);
+  }
+}
+
+
+
+
+@-webkit-keyframes third_object_animate {
+  0% { -webkit-transform: perspective(300px); }
+  50% { -webkit-transform: perspective(300px) rotateY(-180deg); }
+  100% { -webkit-transform: perspective(300px) rotateY(-180deg) rotateX(-180deg); }
+}
+
+@keyframes third_object_animate {
+  0% { 
+    transform: perspective(300px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(300px) rotateX(0deg) rotateY(0deg); 
+  } 50% { 
+    transform: perspective(300px) rotateX(-180deg) rotateY(0deg);
+    -webkit-transform: perspective(300px) rotateX(-180deg) rotateY(0deg) ;
+  } 100% { 
+    transform: perspective(300px) rotateX(-180deg) rotateY(-180deg);
+    -webkit-transform: perspective(300px) rotateX(-180deg) rotateY(-180deg);
+  }
+}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<div id="loading">
+<div id="loading-center">
+<div id="loading-center-absolute">
+<div class="object" id="first_object"></div>
+<div class="object" id="second_object"></div>
+<div class="object" id="third_object"></div>
+
+</div>
+</div>
+ 
+</div>
+
+
+<div id="header">
+<div id="header-left">
+
+<div id="header-left-icon"><a href="http://simbyone.com/30-css-page-preload-animations/"><i class="fa fa-angle-left"></i></a></div>
+<div id="header-left-text"><a href="http://simbyone.com/30-css-page-preload-animations/">30 CSS Page Preload Animations</a></div>
+</div>
+
+<div id="header-right">
+<div id="header-right-icon"><a href="http://simbyone.com/css-page-preload-animations/css-page-preload-animations.zip"><i class="fa fa-cloud-download"></i></a></div>
+<div id="header-right-text"><a href="http://simbyone.com/css-page-preload-animations/css-page-preload-animations.zip">Download Source</a></div>
+</div>
+</div>
+
+<div id="wrapper">
+<div id="wrapper-center">
+<div class="wrapper-center-title">Square Animations</div>
+<div class="wrapper-center-content">
+<a href="demo1.html">Demo 1</a>
+<a href="demo2.html">Demo 2</a>
+<a href="demo3.html">Demo 3</a>
+<a href="demo4.html">Demo 4</a>
+<a href="demo5.html">Demo 5</a>
+<a href="demo6.html">Demo 6</a>
+<a href="demo7.html">Demo 7</a>
+<a href="demo8.html">Demo 8</a>
+<a href="demo9.html">Demo 9</a>
+<a href="demo10.html">Demo 10</a>
+</div>
+<div class="wrapper-center-title">Round Animations</div>
+<div class="wrapper-center-content">
+<a href="demo11.html">Demo 11</a>
+<a href="demo12.html">Demo 12</a>
+<a href="demo13.html">Demo 13</a>
+<a href="demo14.html">Demo 14</a>
+<a href="demo15.html">Demo 15</a>
+<a href="demo16.html">Demo 16</a>
+<a href="demo17.html">Demo 17</a>
+<a href="demo18.html">Demo 18</a>
+<a href="demo19.html">Demo 19</a>
+<a href="demo20.html">Demo 20</a>
+</div>
+<div class="wrapper-center-title">Various Animations</div>
+<div class="wrapper-center-content">
+<a href="demo21.html">Demo 21</a>
+<a href="demo22.html">Demo 22</a>
+<a href="demo23.html">Demo 23</a>
+<a href="demo24.html">Demo 24</a>
+<a href="demo25.html">Demo 25</a>
+<a href="demo26.html">Demo 26</a>
+<a href="demo27.html">Demo 27</a>
+<a href="demo28.html">Demo 28</a>
+<a href="demo29.html">Demo 29</a>
+<a href="demo30.html">Demo 30</a>
+</div>
+</div>
+</div>
+<?php $post_title = 'Drag and Drop Newsletter Builder using jQuery'; require_once('../recommended_posts.php'); ?>
+
+</body>
+</html>
