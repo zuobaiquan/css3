@@ -1,4 +1,4 @@
-## ![logo](https://github.com/chokcoco/iCSS/blob/master/logo.jpg?raw=true)
+## 原文链接：http://www.cnblogs.com/coco1s
 
 你想知道的 CSS 奇技淫巧，在这里，都有。
 
