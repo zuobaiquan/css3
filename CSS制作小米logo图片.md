@@ -5,7 +5,11 @@ tags: CSS
 comments: false
 ---
 
-今天的主题是纯CSS制作小米的logo，尽量少用图片嘛，所以css技术和技巧要求很高哈<!--more-->
+今天的主题是纯CSS制作小米的logo，尽量少用图片嘛，所以css技术和技巧要求很高哈.
+
+线上地址：https://zuobaiquan.github.io/css3/CSS%E5%88%B6%E4%BD%9C%E5%B0%8F%E7%B1%B3logo.html
+
+<!--more-->
 
 ![](https://raw.githubusercontent.com/zuobaiquan/blogImg/master/CSS/小米logo6.png)
 
