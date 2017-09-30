@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Document</title>
+<style type="text/css">
+body{background: #ddd;}
+.bg{
+	background: yellow;
+	width: 300px;
+	height: 300px;
+}
+.M{
+    width: 80px;  
+    height: 80px;
+    border-radius: 0 45px 0 0;  
+    border-top: 30px solid #fff;  
+    border-right: 30px solid #fff;  
+    border-left: 30px solid #fff;
+    border-bottom-width: 0; 
+}
+.M:before {
+	content: "";
+	display: inline-block;
+	position: relative;
+	left: 25px;
+	top: -30px;
+	height: 55px;
+	width: 30px;
+	background: #fff;
+}  
+.M:after{
+  content: " ";
+  display: inline-block;
+  position: relative;
+  left: 110px;
+  top: -30px;
+  height: 110px;
+  width: 30px;
+  background: #fff;
+}
+</style>
+</head>
+<body>
+<div class="bg">
+	<div class="M">
+	</div>
+</div>
+</body>
+</html>
