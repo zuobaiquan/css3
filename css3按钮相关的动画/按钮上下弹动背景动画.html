@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style type="text/css" media="screen">
+    body{
+      width: 100%;
+      height: 100%;
+      background-color: #feb41d;
+    }
+    .button{
+      position: relative;
+      color: rgba(255,255,255,1);
+      transition: all 0.5s;
+      border: 1px solid rgba(255,255,255,0.5);
+    }
+    .sim-button{
+      line-height: 50px;
+    	height: 50px;
+    	text-align: center;
+    	margin: 0 auto;
+    	width: 60%;
+    	cursor: pointer;
+    }
+    .button:hover{
+    	animation-name: myanimation;
+    	animation-duration: 1s;
+    	animation-fill-mode: both;
+    	background-color: rgba(255,255,255,0.2);
+    }
+    @keyframes myanimation{
+      from, 11.1%, to {
+        transform: none;
+      }
+      22.2% {
+        transform: skewX(-12.5deg) skewY(-12.5deg);
+      }
+      33.3% {
+        transform: skewX(6.25deg) skewY(6.25deg);
+      }
+      44.4% {
+        transform: skewX(-3.125deg) skewY(-3.125deg);
+      }
+      55.5% {
+        transform: skewX(1.5625deg) skewY(1.5625deg);
+      }
+      66.6% {
+        transform: skewX(-0.78125deg) skewY(-0.78125deg);
+      }
+      77.7% {
+        transform: skewX(0.390625deg) skewY(0.390625deg);
+      }
+      88.8% {
+        transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+      }
+    }
+    </style>
+  </head>
+  <body>
+      <div class="sim-button button" data-text="登录">
+        <span>我是按钮</span>
+      </div>
+  </body>
+</html>
