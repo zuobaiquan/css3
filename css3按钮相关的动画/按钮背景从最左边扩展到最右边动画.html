@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style type="text/css" media="screen">
+    body{
+      width: 100%;
+      height: 100%;
+      background-color: #feb41d;
+    }
+    .button{
+      position: relative;
+      color: rgba(255,255,255,1);
+      transition: all 0.5s;
+      border: 1px solid rgba(255,255,255,0.5);
+    }
+    .sim-button{
+      line-height: 50px;
+    	height: 50px;
+    	text-align: center;
+    	margin: 0 auto;
+    	width: 60%;
+    	cursor: pointer;
+    }
+    .button span {
+    	display: block;
+    }
+    .button::before{
+    	content: '';
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	width: 0;
+    	height: 100%;
+    	opacity: 0;
+    	background: rgba(255,255,255,0.5);
+    	transition: all 0.4s;
+    }
+    .button:hover::before{
+    	opacity: 1;
+      width:100%;
+    }
+    </style>
+  </head>
+  <body>
+      <div class="sim-button button" data-text="登录">
+        <span>我是按钮</span>
+      </div>
+  </body>
+</html>
