@@ -1,0 +1,1055 @@
+/*声明字体*/
+@font-face {font-family: 'iconfont';
+    src: url('../iconfonts/iconfont.eot'); /* IE9*/
+    src: url('../iconfonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../iconfonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../iconfonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../iconfonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+/*定义使用iconfont样式*/
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:14px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*主页类*/
+.iconfont-home:before{
+	content: "\e630";
+}
+.iconfont-home1:before{
+	content: "\e764";
+}
+.iconfont-home2:before{
+	content: "\e765";
+}
+.iconfont-home3:before{
+	content: "\e766";
+}
+.iconfont-home4:before{
+	content: "\e767";
+}
+.iconfont-home5:before{
+	content: "\e768";
+}
+/*设置*/
+.iconfont-set:before{
+	content: "\e600";
+}
+.iconfont-set1:before{
+	content: "\e622";
+}
+.iconfont-set2:before{
+	content: "\e626";
+}
+.iconfont-set3:before{
+	content: "\e646";
+}
+.iconfont-set4:before{
+	content: "\e68d";
+}
+.iconfont-set5:before{
+	content: "\e687";
+}
+/*搜索*/
+.iconfont-search:before{
+	content: "\e602";
+}
+.iconfont-search1:before{
+	content: "\e614";
+}
+/*刷新*/
+.iconfont-refresh:before{
+	content: "\e603";
+}
+.iconfont-refresh1:before{
+	content: "\e618";
+}
+.iconfont-refresh2:before{
+	content: "\e62c";
+}
+.iconfont-refresh3:before{
+	content: "\e69e";
+}
+.iconfont-refresh4:before{
+	content: "\e660";
+}
+/*书*/
+.iconfont-book:before{
+	content: "\e6bd";
+}
+.iconfont-book1:before{
+	content: "\e6a7";
+}
+.iconfont-book2:before{
+	content: "\e67a";
+}
+.iconfont-bookmark:before{
+	content: "\e604";
+}
+.iconfont-bookmark1:before{
+	content: "\e6c3";
+}
+.iconfont-bookmark2:before{
+	content: "\e624";
+}
+/*播放类*/
+.iconfont-music:before{
+	content: "\e620";
+}
+.iconfont-music1:before{
+	content: "\e6c5";
+}
+.iconfont-set-backward:before{
+	content: "\e64b";
+}
+.iconfont-fast-backward:before{
+	content: "\e693";
+}
+.iconfont-backward:before{
+	content: "\e6cd";
+}
+.iconfont-play:before{
+	content: "\e605";
+}
+.iconfont-play1:before{
+	content: "\e609";
+}
+.iconfont-play2:before{
+	content: "\e60d";
+}
+.iconfont-play3:before{
+	content: "\e6c6";
+}
+.iconfont-play4:before{
+	content: "\e634";
+}
+.iconfont-play5:before{
+	content: "\e66e";
+}
+.iconfont-pause:before{
+	content: "\e6a5";
+}
+.iconfont-pause1:before{
+	content: "\e68e";
+}
+.iconfont-pause2:before{
+	content: "\e66d";
+}
+.iconfont-pause3:before{
+	content: "\e608";
+}
+.iconfont-pause4:before{
+	content: "\e6c7";
+}
+.iconfont-stop:before{
+	content: "\e64e";
+}
+.iconfont-stop1:before{
+	content: "\e65b";
+}
+.iconfont-stop2:before{
+	content: "\e680";
+}
+.iconfont-stop3:before{
+	content: "\e6c8";
+}
+.iconfont-forward:before{
+	content: "\e6ce";
+}
+.iconfont-fast-forward:before{
+	content: "\e64a";
+}
+.iconfont-set-forward:before{
+	content: "\e64c";
+}
+/*音量*/
+.iconfont-volume-off:before{
+	content: "\e6fd";
+}
+.iconfont-volume-off1:before{
+	content: "\e6fc";
+}
+.iconfont-volume-off2:before{
+	content: "\e643";
+}
+.iconfont-volume-up:before{
+	content: "\e6f9";
+}
+.iconfont-volume-up1:before{
+	content: "\e6f8";
+}
+.iconfont-volume-up2:before{
+	content: "\e696";
+}
+.iconfont-volume-down:before{
+	content: "\e6f7";
+}
+.iconfont-volume-down1:before{
+	content: "\e6fa";
+}
+.iconfont-volume-down2:before{
+	content: "\e6b2";
+}
+/*上传下载*/
+.iconfont-download:before{
+	content: "\e606";
+}
+.iconfont-download1:before{
+	content: "\e610";
+}
+.iconfont-download2:before{
+	content: "\e640";
+}
+.iconfont-download3:before{
+	content: "\e68c";
+}
+.iconfont-download4:before{
+	content: "\e6aa";
+}
+.iconfont-cloud-download:before{
+	content: "\e63c";
+}
+.iconfont-cloud:before{
+	content: "\e6a8";
+}
+.iconfont-cloud1:before{
+	content: "\e6b8";
+}
+.iconfont-upload:before{
+	content: "\e67f";
+}
+.iconfont-upload1:before{
+	content: "\e65d";
+}
+.iconfont-upload2:before{
+	content: "\e67f";
+}
+.iconfont-upload3:before{
+	content: "\e689";
+}
+.iconfont-upload4:before{
+	content: "\e628";
+}
+.iconfont-print:before{
+	content: "\e60b";
+}
+.iconfont-print1:before{
+	content: "\e65f";
+}
+.iconfont-print2:before{
+	content: "\e661";
+}
+/*文本类*/
+.iconfont-font-size:before{
+	content: "\e60c";
+}
+.iconfont-font-size1:before{
+	content: "\e669";
+}
+.iconfont-font-size2:before{
+	content: "\e666";
+}
+.iconfont-font-size3:before{
+	content: "\e665";
+}
+.iconfont-font:before{
+	content: "\e6be";
+}
+.iconfont-font1:before{
+	content: "\e639";
+}
+.iconfont-font-italic:before{
+	content: "\e64f";
+}
+.iconfont-font-bold:before{
+	content: "\e63a";
+}
+.iconfont-sortbynameeaz:before{
+	content: "\e73d";
+}
+.iconfont-sortbynameeza:before{
+	content: "\e73e";
+}
+.iconfont-text-left:before{
+	content: "\e6ed";
+}
+.iconfont-text-center:before{
+	content: "\e6eb";
+}
+.iconfont-text-right:before{
+	content: "\e6ee";
+}
+.iconfont-text-justify:before{
+	content: "\e6ec";
+}
+.iconfont-text-height:before{
+	content: "\e6f0";
+}
+.iconfont-text-width:before{
+	content: "\e6f1";
+}
+.iconfont-indent-left:before{
+	content: "\e633";
+}
+.iconfont-indent-right:before{
+	content: "\e6a6";
+}
+/*货币*/
+.iconfont-gbp:before{
+	content: "\e74a";
+}
+.iconfont-bitcoin:before{
+	content: "\e74c";
+}
+.iconfont-dollar:before{
+	content: "\e613";
+}
+.iconfont-yen:before{
+	content: "\e750";
+}
+.iconfont-yen1:before{
+	content: "\e75a";
+}
+.iconfont-euro:before{
+	content: "\e688";
+}
+.iconfont-euro1:before{
+	content: "\e6c0";
+}
+.iconfont-ruble:before{
+	content: "\e753";
+}
+/*时间*/
+.iconfont-time:before{
+	content: "\e60e";
+}
+.iconfont-time1:before{
+	content: "\e621";
+}
+.iconfont-time2:before{
+	content: "\e658";
+}
+/*菜单列表*/
+.iconfont-menu-list:before{
+	content: "\e60f";
+}
+.iconfont-menu-list1:before{
+	content: "\e611";
+}
+.iconfont-menu-list2:before{
+	content: "\e62f";
+}
+.iconfont-menu-list3:before{
+	content: "\e674";
+}
+.iconfont-menu-list4:before{
+	content: "\e6e6";
+}
+.iconfont-menu-list5:before{
+	content: "\e6e7";
+}
+.iconfont-menu-list6:before{
+	content: "\e6e8";
+}
+.iconfont-menu-list7:before{
+	content: "\e6bc";
+}
+.iconfont-menu-list8:before{
+	content: "\e635";
+}
+/*心与星*/
+.iconfont-heart:before{
+	content: "\e612";
+}
+.iconfont-heart1:before{
+	content: "\e685";
+}
+.iconfont-star:before{
+	content: "\e629";
+}
+.iconfont-star1:before{
+	content: "\e63b";
+}
+.iconfont-star2:before{
+	content: "\e671";
+}
+.iconfont-star3:before{
+	content: "\e6ba";
+}
+/*邮件*/
+.iconfont-email:before{
+	content: "\e615";
+}
+.iconfont-email1:before{
+	content: "\e61f";
+}
+.iconfont-email2:before{
+	content: "\e638";
+}
+.iconfont-sending-box:before{
+	content: "\e637";
+}
+.iconfont-inbox:before{
+	content: "\e636";
+}
+/*电话*/
+.iconfont-phone:before{
+	content: "\e74d";
+}
+.iconfont-phone1:before{
+	content: "\e754";
+}
+.iconfont-mphone:before{
+	content: "\e6e9";
+}
+.iconfont-mphone1:before{
+	content: "\e6ea";
+}
+/*二维码*/
+.iconfont-qrcode:before{
+	content: "\e617";
+}
+.iconfont-qrcode1:before{
+	content: "\e62d";
+}
+.iconfont-qrcode2:before{
+	content: "\e675";
+}
+.iconfont-qrcode3:before{
+	content: "\e681";
+}
+.iconfont-qrcode4:before{
+	content: "\e682";
+}
+/*分享*/
+.iconfont-share:before{
+	content: "\e619";
+}
+.iconfont-share1:before{
+	content: "\e61e";
+}
+.iconfont-share2:before{
+	content: "\e657";
+}
+/*编写*/
+.iconfont-edit:before{
+	content: "\e61a";
+}
+.iconfont-edit1:before{
+	content: "\e664";
+}
+/*笔*/
+.iconfont-pen:before{
+	content: "\e61c";
+}
+.iconfont-pen1:before{
+	content: "\e63f";
+}
+.iconfont-pen2:before{
+	content: "\e662";
+}
+.iconfont-pen3:before{
+	content: "\e6ef";
+}
+/*用户*/
+.iconfont-user:before{
+	content: "\e623";
+}
+.iconfont-user1:before{
+	content: "\e679";
+}
+.iconfont-user2:before{
+	content: "\e6ae";
+}
+.iconfont-add-user:before{
+	content: "\e61b";
+}
+.iconfont-remove-user:before{
+	content: "\e62e";
+}
+.iconfont-man:before{
+	content: "\e705";
+}
+.iconfont-woman:before{
+	content: "\e704";
+}
+/*移动*/
+.iconfont-move:before{
+	content: "\e61d";
+}
+.iconfont-move1:before{
+	content: "\e69a";
+}
+.iconfont-zoom-in:before{
+	content: "\e6b5";
+}
+.iconfont-zoom-in1:before{
+	content: "\e694";
+}
+.iconfont-zoom-out:before{
+	content: "\e6b4";
+}
+.iconfont-zoom-out1:before{
+	content: "\e691";
+}
+.iconfont-resize-full:before{
+	content: "\e712";
+}
+.iconfont-resize-full1:before{
+	content: "\e653";
+}
+.iconfont-resize-small:before{
+	content: "\e713";
+}
+.iconfont-resize-small1:before{
+	content: "\e65c";
+}
+/*加减*/
+.iconfont-plus:before{
+	content: "\e625";
+}
+.iconfont-plus1:before{
+	content: "\e627";
+}
+.iconfont-plus2:before{
+	content: "\e651";
+}
+.iconfont-minus:before{
+	content: "\e641";
+}
+.iconfont-minus1:before{
+	content: "\e63e";
+}
+.iconfont-close:before{
+	content: "\e684";
+}
+.iconfont-close1:before{
+	content: "\e69f";
+}
+/*文件*/
+.iconfont-file:before{
+	content: "\e725";
+}
+.iconfont-file1:before{
+	content: "\e729";
+}
+.iconfont-file2:before{
+	content: "\e6bb";
+}
+.iconfont-file3:before{
+	content: "\e6a4";
+}
+.iconfont-file4:before{
+	content: "\e695";
+}
+.iconfont-no:before{
+	content: "\e62a";
+}
+.iconfont-noo:before{
+	content: "\e645";
+}
+.iconfont-ok:before{
+	content: "\e648";
+}
+.iconfont-ok1:before{
+	content: "\e650";
+}
+.iconfont-lock:before{
+	content: "\e62b";
+}
+.iconfont-lock1:before{
+	content: "\e631";
+}
+.iconfont-zip:before{
+	content: "\e726";
+}
+/*赞*/
+.iconfont-thumbs-up:before{
+	content: "\e727";
+}
+.iconfont-thumbs-up1:before{
+	content: "\e6e5";
+}
+.iconfont-thumbs-up2:before{
+	content: "\e6af";
+}
+.iconfont-thumbs-down:before{
+	content: "\e728";
+}
+
+.iconfont-sunglass:before{
+	content: "\e74e";
+}
+.iconfont-camera:before{
+	content: "\e632";
+}
+.iconfont-camera1:before{
+	content: "\e67c";
+}
+.iconfont-link:before{
+	content: "\e72a";
+}
+.iconfont-link1:before{
+	content: "\e72c";
+}
+.iconfont-link2:before{
+	content: "\e6d7";
+}
+.iconfont-shopping:before{
+	content: "\e706";
+}
+.iconfont-shopping1:before{
+	content: "\e70a";
+}
+.iconfont-shopping2:before{
+	content: "\e724";
+}
+.iconfont-truck:before{
+	content: "\e6f2";
+}
+.iconfont-truck1:before{
+	content: "\e6f3";
+}
+.iconfont-filter:before{
+	content: "\e736";
+}
+.iconfont-magnet:before{
+	content: "\e70b";
+}
+/*标签*/
+.iconfont-tag:before{
+	content: "\e663";
+}
+.iconfont-tag1:before{
+	content: "\e68f";
+}
+.iconfont-tag2:before{
+	content: "\e65a";
+}
+.iconfont-film:before{
+	content: "\e63d";
+}
+.iconfont-film1:before{
+	content: "\e642";
+}
+.iconfont-film2:before{
+	content: "\e668";
+}
+.iconfont-tower:before{
+	content: "\e74f";
+}
+.iconfont-comment:before{
+	content: "\e707";
+}
+.iconfont-comment1:before{
+	content: "\e708";
+}
+.iconfont-cutlery:before{
+	content: "\e72d";
+}
+.iconfont-flash:before{
+	content: "\e72e";
+}
+.iconfont-flash1:before{
+	content: "\e73a";
+}
+.iconfont-adjust:before{
+	content: "\e649";
+}
+.iconfont-tint:before{
+	content: "\e64d";
+}
+.iconfont-sort:before{
+	content: "\e730";
+}
+.iconfont-sort1:before{
+	content: "\e739";
+}
+.iconfont-facetime:before{
+	content: "\e652";
+}
+.iconfont-facetime1:before{
+	content: "\e66c";
+}
+.iconfont-bell:before{
+	content: "\e731";
+}
+.iconfont-bell1:before{
+	content: "\e737";
+}
+.iconfont-save:before{
+	content: "\e732";
+}
+.iconfont-save1:before{
+	content: "\e747";
+}
+.iconfont-save2:before{
+	content: "\e742";
+}
+.iconfont-picture:before{
+	content: "\e654";
+}
+.iconfont-picture1:before{
+	content: "\e677";
+}
+.iconfont-picture2:before{
+	content: "\e699";
+}
+.iconfont-upimg:before{
+	content: "\e67b";
+}
+.iconfont-fire:before{
+	content: "\e709";
+}
+.iconfont-globe:before{
+	content: "\e733";
+}
+.iconfont-header:before{
+	content: "\e734";
+}
+.iconfont-onoff:before{
+	content: "\e659";
+}
+.iconfont-onoff1:before{
+	content: "\e67d";
+}
+.iconfont-onoff2:before{
+	content: "\e683";
+}
+.iconfont-crown:before{
+	content: "\e751";
+}
+.iconfont-crown1:before{
+	content: "\e761";
+}
+.iconfont-ice-cream:before{
+	content: "\e752";
+}
+.iconfont-tasks:before{
+	content: "\e738";
+}
+.iconfont-flag:before{
+	content: "\e667";
+}
+.iconfont-flag1:before{
+	content: "\e6b9";
+}
+.iconfont-road:before{
+	content: "\e66a";
+}
+.iconfont-road1:before{
+	content: "\e6c4";
+}
+.iconfont-retweet:before{
+	content: "\e70d";
+}
+.iconfont-card:before{
+	content: "\e73b";
+}
+.iconfont-card1:before{
+	content: "\e746";
+}
+.iconfont-send:before{
+	content: "\e73c";
+}
+.iconfont-send1:before{
+	content: "\e744";
+}
+.iconfont-headest:before{
+	content: "\e66f";
+}
+.iconfont-headest1:before{
+	content: "\e69c";
+}
+.iconfont-headest2:before{
+	content: "\e69d";
+}
+.iconfont-dashboard:before{
+	content: "\e73f";
+}
+.iconfont-signal:before{
+	content: "\e673";
+}
+.iconfont-signal1:before{
+	content: "\e6b1";
+}
+.iconfont-queen:before{
+	content: "\e755";
+}
+.iconfont-doctor:before{
+	content: "\e756";
+}
+.iconfont-doctor1:before{
+	content: "\e75b";
+}
+.iconfont-doctor2:before{
+	content: "\e75d";
+}
+.iconfont-leaf:before{
+	content: "\e70e";
+}
+.iconfont-leaf1:before{
+	content: "\e711";
+}
+/*社交*/
+.iconfont-wechat:before{
+	content: "\e676";
+}
+.iconfont-wechat1:before{
+	content: "\e601";
+}
+.iconfont-qq:before{
+	content: "\e71e";
+}
+.iconfont-qq1:before{
+	content: "\e71f";
+}
+.iconfont-qqzone:before{
+	content: "\e71a";
+}
+.iconfont-qqzone1:before{
+	content: "\e71b";
+}
+.iconfont-sina:before{
+	content: "\e720";
+}
+.iconfont-sina1:before{
+	content: "\e721";
+}
+.iconfont-baidu:before{
+	content: "\e716";
+}
+.iconfont-baidu1:before{
+	content: "\e717";
+}
+.iconfont-google:before{
+	content: "\e718";
+}
+.iconfont-google1:before{
+	content: "\e719";
+}
+.iconfont-friends:before{
+	content: "\e71c";
+}
+.iconfont-friends1:before{
+	content: "\e71d";
+}
+.iconfont-alipay:before{
+	content: "\e722";
+}
+.iconfont-alipay1:before{
+	content: "\e723";
+}
+.iconfont-facebook:before{
+	content: "\e6dd";
+}
+.iconfont-facebook1:before{
+	content: "\e6de";
+}
+.iconfont-facebook2:before{
+	content: "\e6df";
+}
+.iconfont-github:before{
+	content: "\e6e0";
+}
+.iconfont-github1:before{
+	content: "\e6e1";
+}
+.iconfont-twitter:before{
+	content: "\e6f4";
+}
+.iconfont-twitter1:before{
+	content: "\e6f5";
+}
+.iconfont-twitter2:before{
+	content: "\e6f6";
+}
+.iconfont-wordpress:before{
+	content: "\e6fe";
+}
+.iconfont-html5:before{
+	content: "\e6e3";
+}
+.iconfont-html5o:before{
+	content: "\e6e4";
+}
+/*箭头*/
+.iconfont-menu-up:before{
+	content: "\e6d0";
+}
+.iconfont-menu-right:before{
+	content: "\e6c9";
+}
+.iconfont-menu-down:before{
+	content: "\e6ca";
+}
+.iconfont-menu-left:before{
+	content: "\e6cb";
+}
+.iconfont-cirde-up:before{
+	content: "\e6dc";
+}
+.iconfont-cirde-right:before{
+	content: "\e6db";
+}
+.iconfont-cirde-down:before{
+	content: "\e6d9";
+}
+.iconfont-cirde-left:before{
+	content: "\e6da";
+}
+.iconfont-arrow-up:before{
+	content: "\e6d1";
+}
+.iconfont-arrow-up1:before{
+	content: "\e6d2";
+}
+.iconfont-arrow-right:before{
+	content: "\e6b6";
+}
+.iconfont-arrow-right1:before{
+	content: "\e6c1";
+}
+.iconfont-arrow-down:before{
+	content: "\e644";
+}
+.iconfont-arrow-down1:before{
+	content: "\e647";
+}
+.iconfont-arrow-left:before{
+	content: "\e6a2";
+}
+.iconfont-arrow-left1:before{
+	content: "\e6a3";
+}
+.iconfont-up-right:before{
+	content: "\e6d5";
+}
+.iconfont-up-right1:before{
+	content: "\e6d6";
+}
+.iconfont-up-left:before{
+	content: "\e6d3";
+}
+.iconfont-up-left1:before{
+	content: "\e6d4";
+}
+.iconfont-down-right:before{
+	content: "\e65e";
+}
+.iconfont-down-right1:before{
+	content: "\e690";
+}
+.iconfont-down-left:before{
+	content: "\e655";
+}
+.iconfont-down-left1:before{
+	content: "\e656";
+}
+.iconfont-stats:before{
+	content: "\e757";
+}
+.iconfont-stats1:before{
+	content: "\e758";
+}
+.iconfont-pushpin:before{
+	content: "\e740";
+}
+.iconfont-pushpin1:before{
+	content: "\e741";
+}
+.iconfont-record:before{
+	content: "\e743";
+}
+.iconfont-eject:before{
+	content: "\e6cc";
+}
+.iconfont-login-in:before{
+	content: "\e745";
+}
+.iconfont-copyright:before{
+	content: "\e760";
+}
+.iconfont-copyright1:before{
+	content: "\e759";
+}
+.iconfont-remove:before{
+	content: "\e697";
+}
+.iconfont-remove1:before{
+	content: "\e6d8";
+}
+.iconfont-remove2:before{
+	content: "\e6b0";
+}
+.iconfont-eye-open:before{
+	content: "\e714";
+}
+.iconfont-eye-close:before{
+	content: "\e715";
+}
+.iconfont-luxury:before{
+	content: "\e616";
+}
+.iconfont-dolby:before{
+	content: "\e75c";
+}
+.iconfont-grin:before{
+	content: "\e6e2";
+}
+.iconfont-call:before{
+	content: "\e701";
+}
+.iconfont-backtop:before{
+	content: "\e702";
+}
+.iconfont-unchecked:before{
+	content: "\e748";
+}
+.iconfont-unchecked1:before{
+	content: "\e749";
+}
+.iconfont-horizontal:before{
+	content: "\e75e";
+}
+.iconfont-hd:before{
+	content: "\e75f";
+}
+.iconfont-map-marker:before{
+	content: "\e6b3";
+}
+.iconfont-map-marker1:before{
+	content: "\e6c2";
+}
+.iconfont-map-marker2:before{
+	content: "\e6ab";
+}
+.iconfont-square-checked:before{
+	content: "\e6b7";
+}
+.iconfont-gift:before{
+	content: "\e703";
+}
+.iconfont-transfer:before{
+	content: "\e746";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
