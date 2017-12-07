@@ -56,6 +56,7 @@
   display: none !important;
 }
 
+/*默认是向上出现提示框*/
 /* FLOW: UP */
 [tooltip]:not([flow])::before,
 [tooltip][flow^="up"]::before {
@@ -122,14 +123,14 @@
 @keyframes tooltips-vert {
   to {
     opacity: .9;
-    transform: translate(-50%, 0);
+    transform: translateX(-50%);
   }
 }
 
 @keyframes tooltips-horz {
   to {
     opacity: .9;
-    transform: translate(0, -50%);
+    transform: translateY(-50%);
   }
 }
 
@@ -150,8 +151,7 @@
   animation: tooltips-horz 300ms ease-out forwards;
 }
 
-
-
+/*盒子块样式*/
 .box {
   margin-top: 100px;
   text-align: center;
