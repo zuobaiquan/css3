@@ -1,0 +1,132 @@
+/**
+ * css3 mixin lib
+ */
+@import "setting";
+@import "css3";
+@import "reset";
+@import "flexible";
+@if $export-body-font == true {
+    [data-dpr="1"] body{
+        font-size: $font-baseline;
+    }
+    [data-dpr="2"] body{
+        font-size: $font-baseline * 2;
+    }
+    [data-dpr="2.5"] body{
+        font-size: $font-baseline * 2.5;
+    }
+    [data-dpr="2.75"] body{
+        font-size: $font-baseline * 2.75;
+    }
+    [data-dpr="3"] body{
+        font-size: $font-baseline * 3;
+    }
+}
+
+/*
+* rank-box  通用定义，1）包含图片包裹样式，
+*                    2）点击更多样式
+*
+*
+*/
+.rank-box {
+    background:#fff;
+    margin-bottom:rem(16px);
+}
+.rank-box .rank-title, .rank-box .rank-body{
+    @include box-sizing(border-box);
+}
+.img-wrapper {
+    display:inline-block;
+    overflow:hidden;
+    border:1px solid rgba(179,179,179,.5);
+    height:rem(186px);
+    width:rem(186px);
+    margin-bottom:rem(24px);
+    position:relative;
+}
+.img-wrapper img{
+    display:block;
+    width:100%;
+    height:100%;
+}
+
+img.delayload{
+    background-color:#ebedf0;
+    background-image:url(//m.baidu.com/static/ala/lbs/morentn.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-clip:content-box;
+}
+.rank-box .more{
+    color: #333;
+    @include fontsize(32px);
+}
+/*
+* css3盒模型一些定义  
+*
+**/
+.flexbox {
+    @include display-flex(flex);
+    width:100%;
+}
+.border-box{
+    @include box-sizing(border-box);    
+}
+.flex-one{
+    @include flex(1);    
+}
+.justify{
+    @include flex-direction(horizontal);
+    @include justify-content(space-between);
+    @include align-items(center);
+}
+
+.center {
+    @include flex-direction(horizontal);
+    @include justify-content(center);
+    @include align-items(center);
+}
+.left {
+    @include flex-direction(horizontal);
+    @include justify-content(flex-start);
+    @include align-items(center);
+}
+.right {
+    @include flex-direction(horizontal);
+    @include justify-content(flex-end);
+    @include align-items(center);
+}
+/*
+*  常用省略号的一些定
+**/
+
+.text-ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.text-line-ellipse {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+}
+.text-onelines{
+    -webkit-line-clamp: 1;
+}
+.text-twolines{
+    -webkit-line-clamp: 2;
+}
+.text-threelines{
+    -webkit-line-clamp: 3;
+}
+
+.border-top{
+    border-top:rem(1px) solid $borderColor;    
+}
+.border-bottom{
+    border-bottom:rem(1px) solid $borderColor;    
+}

@@ -1,0 +1,86 @@
+/**
+ * ugc样式重置文件reset.css
+ * @authors liumanwei (liumanwei@baidu.com)
+ * @date    2014-03-12 14:27:39
+ * @version 1.0
+ */
+@font-face{
+    font-family:mwa;
+    src:url(/static/icons/mwa.eot);
+    src:url(/static/icons/mwa.woff) format("woff"),url(/static/icons/mwa.ttf) format("truetype")
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+div {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input, textarea, button {
+    outline: 0;
+    font-size: 14px;
+}
+textarea {
+    resize: none;
+}
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
+    -webkit-text-size-adjust: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+a, input, select, button, textarea {
+    font-family:'Microsoft YaHei', arial, helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: 'Microsoft YaHei', arial, helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #f3f3f3;
+    -webkit-text-size-adjust:none;
+    -webkit-user-select: none;
+    color: #333333;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+img, table {
+    border: 0;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+select {
+    -webkit-appearance: button;
+    border: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.clearfix:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+input[type="button"], input[type="submit"], input[type="reset"] {
+    -webkit-appearance: none;
+}
