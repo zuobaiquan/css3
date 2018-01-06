@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style type="text/css" media="screen">
+    body{
+      width: 100%;
+      height: 100%;
+      background-color: #feb41d;
+    }
+    .button{
+      position: relative;
+      color: rgba(255,255,255,1);
+      border: 1px solid rgba(255,255,255,0.5);
+      transition: all 0.5s;
+      overflow: hidden;
+    }
+    .sim-button{
+      line-height: 50px;
+    	height: 50px;
+    	text-align: center;
+    	margin: 0 auto;
+    	width: 60%;
+    	cursor: pointer;
+    }
+    .button span {
+    	display: block;
+    }
+    .button::before{
+    	content: '';
+    	position: absolute;
+    	top: 50px;
+    	left: -5px;
+    	width: 0;
+    	height: 0;
+    	border-left: 100px solid transparent;
+    	border-right: 100px solid transparent;
+    	border-bottom: 190px solid rgba(255,255,255,0.25);
+    	z-index: 1;
+    	transition: all 0.5s;
+    }
+    .button::after{
+    	content: '';
+    	position: absolute;
+    	top: 50px;
+    	left: -5px;
+    	width: 0;
+    	height: 0;
+    	border-left: 100px solid transparent;
+    	border-right: 100px solid transparent;
+    	border-bottom: 190px solid rgba(255,255,255,0.25);
+    	z-index: 1;
+    	transition: all 0.5s;
+    }
+    .button::after{
+      transition-delay: 0.2s;
+    }
+    .button:hover::before{
+    	opacity: 1;
+    	transform: translate(0px,-190px);
+    }
+    .button:hover::after{
+    	opacity: 1;
+    	transform: translate(0px,-150px);
+    }
+    </style>
+  </head>
+  <body>
+      <div class="sim-button button" data-text="登录">
+        <span>我是按钮</span>
+      </div>
+  </body>
+</html>

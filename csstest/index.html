@@ -3,17 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script type="text/javascript">
-    window.onload=function(){
-      var div1 = document.getElementById("a");
-      div1.onclick=function(){
-         alert("我被单击了");
+    <style>
+      @keyframes move {
+        0% {
+          left: 0;
+          top: 20px;
+        }
+        20%, 80% {
+          top: 20px;
+        }
+        30%, 70% {
+          top: 0;
+        }
+        100% {
+          left: 300px;
+          top: 20px;
+        }
       }
-    }
-
-    </script>
-  </head>
-  <body>
-    <div id="a">11111111111111111</div>
-  </body>
+      .box {
+        position: relative;
+        width: 300px;
+        height: 20px;
+        background: skyblue;
+      }
+      .point {
+        width: 10px;
+        height: 10px;
+        background-color: #f00;
+        position: absolute;
+        border-radius: 50%;
+        animation: move 6s infinite linear;
+      }
+</style>
+<body>
+  <div class="box">
+    <div class="point"></div>
+  </div>
+</body>
 </html>

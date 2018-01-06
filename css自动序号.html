@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Document</title>
+<style type="text/css">
+ul{
+	margin:0;padding:0;
+	counter-reset:sectioncounter;
+	list-style: none;
+}
+ul li{
+	position: relative;
+	padding-left: 25px;
+}
+ul li:before{
+    position: absolute;
+    content:counter(sectioncounter) ".";
+    counter-increment:sectioncounter;
+    display: inline-block;
+    top:0;
+    left:0;
+    width:20px;
+    height: 20px;
+    background: #FF6A37;
+    border-radius: 100%;
+    text-align: center;
+    color:#fff;
+}
+</style>
+</head>
+<body>
+<ul>
+	<li>我是第一排</li>
+	<li>我是第二排</li>
+	<li>我是第三排</li>
+	<li>我是第四排</li>
+</ul>
+</body>
+</html>
