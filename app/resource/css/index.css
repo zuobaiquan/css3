@@ -1,1 +1,175 @@
-blockquote,body,button,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}table,td,tr{border:0;border-collapse:collapse;border-spacing:0}address,caption,cite,code,dfn,em,strong,th,var{font-weight:400;font-style:normal}h1,h2,h3,h4,h5{font-size:100%;font-weight:400}ol,ul{list-style:none}li{list-style:none outside none}a img,fieldset,img{border:0 none;outline:0}caption,th{text-align:center}abbr,acronym{border:0}textarea{resize:none}abbr,acronym{border:0 none;font-variant:normal}a{text-decoration:none;outline-style:none}a:hover{text-decoration:underline}.wrap-container img{display:block}.header{position:absolute;top:0;left:0;right:0;width:100%;height:66px;margin:0 auto;background:#1f2e48}.header .header-box{height:66px;line-height:66px;width:70%;margin:0 auto;position:relative}.header .header-box .left{float:left;display:inline-block;*display:inline;margin:8px 0;background:url(../img/logo.png) 0 no-repeat;height:49px;width:146px}.header .header-box .link{margin-left:20px;display:block;float:left;font-size:13px;color:#ccc;text-decoration:none}.header .header-box .right{float:right;display:inline-block;*display:inline;*zoom:1;font-size:15px;padding:0 20px;height:66px;line-height:66px;background:#1c6cd9;color:#fff;text-decoration:none}.header .header-box .right:hover .header-ewm{display:block}.header .header-box .right .header-ewm{position:absolute;right:-40px;top:66px;width:180px;height:180px;display:none;z-index:1}.container{position:absolute;top:66px;bottom:40px;left:0;right:0;width:100%;overflow:hidden;text-align:center;background:url(../img/bg.jpg) top no-repeat;background-size:100%}.container .container-box{width:70%;margin:0 auto;overflow:hidden}.container .container-box img{width:24%;float:left;overflow:hidden;text-align:left}.container .container-box .img-phone{margin:55px 0 40px}.container .container-box .right{margin-top:55px;float:right}.container .container-box .right .top-text{margin-top:8%;display:block;width:260px;height:50px;background:url(../img/app.png) 50% no-repeat;background-size:100%}.container .container-box .right .second-text{margin:3% 0;font-size:50px;color:#fff}.container .container-box .right .third-box{float:left}.container .container-box .right .third-box ul{float:left;margin:15px 0}.container .container-box .right .third-box .img-app{width:196px;height:50px;background-size:100%;margin-bottom:20px}.container .container-box .right .third-box .ewm-box{float:left;margin-left:60px;width:160px;height:160px;text-align:center;border:1px solid #fff}.container .container-box .right .third-box .ewm{margin:5px;width:150px;height:150px;background-size:100%}.bottom{position:absolute;bottom:0;left:0;right:0;margin:0 auto;width:100%;height:40px;line-height:40px;text-align:center;color:#fff;font-size:13px;background:#86976d}
+body, div, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre, form, fieldset, legend, input, button, textarea, hr {
+  margin: 0;
+  padding: 0; }
+
+table, tr, td {
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-weight: normal;
+  font-style: normal; }
+
+h1, h2, h3, h4, h5 {
+  font-size: 100%;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+li {
+  list-style: none outside none; }
+
+fieldset, img, a img {
+  border: 0 none;
+  outline: 0; }
+
+caption, th {
+  text-align: center; }
+
+abbr, acronym {
+  border: 0; }
+
+textarea {
+  resize: none; }
+
+abbr, acronym {
+  border: 0 none;
+  font-variant: normal; }
+
+a {
+  text-decoration: none;
+  outline-style: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+.wrap-container img {
+  display: block; }
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 66px;
+  margin: 0 auto;
+  background: #1f2e48; }
+  .header .header-box {
+    height: 66px;
+    line-height: 66px;
+    width: 60%;
+    margin: 0 auto;
+    position: relative; }
+    .header .header-box .left {
+      float: left;
+      display: inline-block;
+      *display: inline;
+      margin: 8px 0 8px;
+      background: url(../img/logo.png) left center no-repeat;
+      height: 49px;
+      width: 146px; }
+    .header .header-box .link {
+      margin-left: 20px;
+      display: block;
+      float: left;
+      font-size: 13px;
+      color: #ccc;
+      text-decoration: none; }
+    .header .header-box .right {
+      float: right;
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      font-size: 15px;
+      padding: 0 20px;
+      height: 66px;
+      line-height: 66px;
+      background: #1c6cd9;
+      color: #fff;
+      text-decoration: none; }
+      .header .header-box .right:hover .header-ewm {
+        display: block; }
+      .header .header-box .right .header-ewm {
+        position: absolute;
+        right: -40px;
+        top: 66px;
+        width: 180px;
+        height: 180px;
+        display: none;
+        z-index: 9; }
+
+.container {
+  position: absolute;
+  top: 66px;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  background: url(../img/bg.jpg) top center no-repeat;
+  background-size: 100%; }
+  .container .container-box {
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden; }
+    .container .container-box img {
+      width: 28%;
+      float: left;
+      overflow: hidden;
+      text-align: left; }
+    .container .container-box .img-phone {
+      margin: 55px 0 40px; }
+    .container .container-box .right {
+      margin-top: 55px;
+      float: right; }
+      .container .container-box .right .top-text {
+        margin-top: 8%;
+        display: block;
+        width: 320px;
+        height: 62px;
+        background: url(../img/app.png) center no-repeat;
+        background-size: 100%; }
+      .container .container-box .right .second-text {
+        margin: 3% 0;
+        font-size: 50px;
+        color: #fff; }
+      .container .container-box .right .third-box {
+        float: left; }
+        .container .container-box .right .third-box ul {
+          float: left;
+          margin: 15px 0; }
+        .container .container-box .right .third-box .img-app {
+          width: 196px;
+          height: 50px;
+          background-size: 100%;
+          margin-bottom: 20px; }
+        .container .container-box .right .third-box .ewm-box {
+          float: left;
+          margin-left: 60px;
+          width: 160px;
+          height: 160px;
+          text-align: center;
+          border: 1px solid #fff; }
+        .container .container-box .right .third-box .ewm {
+          margin: 5px;
+          width: 150px;
+          height: 150px;
+          background-size: 100%; }
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  background: #86976d; }

@@ -1,8 +1,8 @@
 @import 'normalize';
 .wrap-container{
-img{
-  display: block;
-}
+  img{
+    display: block;
+  }
 }
 .header{
   position: absolute;
@@ -16,7 +16,7 @@ img{
   .header-box{
     height: 66px;
     line-height: 66px;
-    width: 70%;
+    width: 60%;
     margin:0 auto;
     position: relative;
     .left{
@@ -77,11 +77,11 @@ img{
   background: url(../img/bg.jpg) top center no-repeat;
   background-size: 100%;
   .container-box{
-    width: 70%;
+    width: 60%;
     margin:0 auto;
     overflow: hidden;
     img{
-      width: 24%;
+      width: 28%;
       float: left;
       overflow: hidden;
       text-align: left;
@@ -95,8 +95,8 @@ img{
       .top-text{
         margin-top: 8%;
         display: block;
-        width: 260px;
-        height: 50px;
+        width: 320px;
+        height: 62px;
         background: url(../img/app.png) center no-repeat;
         background-size: 100%;
       }
