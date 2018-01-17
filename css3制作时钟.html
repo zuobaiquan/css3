@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+<style>
+* {padding: 0;margin: 0;}
+body {background: #000;overflow: hidden;}
+#clock {
+    width: 300px;
+    height: 300px;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -153px;
+    margin-left: -153px;
+    transition: 1s all ease;
+    -webkit-transform: rotateZ(0deg);
+}
+#clock p {
+    position: absolute;
+    left: 50%;
+    border-radius: 50% 50% 0 0;
+    -webkit-transform-origin: bottom center;
+
+}
+#hour {
+    width: 12px;
+    height: 60px;
+    top: 93px;
+    background: #fff;
+    margin-left: -6px;
+}
+#min {
+    width: 8px;
+    height: 80px;
+    top: 73px;
+    background: #fff;
+    margin-left: -4px;
+}
+#sec {
+    width: 6px;
+    height: 100px;
+    top: 53px;
+    background: #d94b01;
+    margin-left: -3px;
+}
+#cen {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    background: -webkit-radial-gradient(#ccc, #999);
+}
+#clock .line {
+    width: 4px;
+    height: 10px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -2px;
+    -webkit-transform-origin: center 150px;
+}
+#clock .big_line {
+    width: 8px;
+    height: 15px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -4px;
+    -webkit-transform-origin: center 150px;
+}
+#clock span em{
+    width:20px;
+    height:14px;
+    position: absolute;
+    left:0%;
+    top:20px;
+    margin-left: -6px;
+    text-align: center;
+    font:bold 14px/1 "微软雅黑";
+    color: #fff;
+}
+</style>
+</head>
+<body>
+<div id="clock">
+    <p id="hour"></p>
+    <p id="min"></p>
+    <p id="sec"></p>
+    <i id="cen"></i>
+</div>
+<script>
+window.onload = function () {
+    var oC = document.querySelector("#clock");
+    var oH = document.querySelector("#hour");
+    var oM = document.querySelector("#min");
+    var oS = document.querySelector("#sec");
+    var n = 60;
+    for (var i = 0; i < n; i++) {
+        var oSpan = document.createElement("span");
+        oSpan.className = 'line';
+        if (i % 5 == 0) {
+            oSpan.className = 'big_line';
+            oSpan.innerHTML ='<em>'+i/5+'</em>';
+            var oEm=oSpan.children[0];
+            oEm.style.webkitTransform = 'rotateZ(' + -i * 6 + 'deg)';
+        }
+        oC.appendChild(oSpan);
+        oSpan.style.webkitTransform = 'rotateZ(' + i * 6 + 'deg)';
+    }
+    setInterval(function () {
+        var d = new Date();
+        var h = d.getHours();
+        var m = d.getMinutes();
+        var s = d.getSeconds();
+        var ms = d.getMilliseconds();
+        oH.style.webkitTransform = 'rotateZ(' + (h * 30 + (m / 60) * 30) + 'deg)';
+        oM.style.webkitTransform = 'rotateZ(' + (m * 6 + (s / 60) * 6) + 'deg)';
+        oS.style.webkitTransform = 'rotateZ(' + (s * 6 + (ms / 1000) * 6) + 'deg)';
+    }, 30);
+}
+</script>
+</body>
+</html>
