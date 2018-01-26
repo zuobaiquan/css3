@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>财富号宣传</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, email=no" />
+	<meta name="full-screen" content="yes">
+	<meta name="x5-fullscreen" content="true">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/swiper.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="propaganda">
+	<div id="stage-swiper" class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide page page1">
+				<div class="slide-page">
+					<p class="pagep-tit page1-tit1">财富号 专业的财经自媒体</p>
+					<p class="pagep-tit page1-tit2">亿万投资者的访问入口</p>
+					<img class="page1-img1" src="img/propaganda/page1-img1.png" alt="">
+					<ul class="page1-ulbox">
+						<li><a class="page-link" href="javascript:;">平台介绍</a></li>
+						<li><a class="page-link" href="javascript:;">优势特权</a></li>
+						<li><a class="page-link" href="javascript:;">入驻大咖</a></li>
+					</ul>
+					<a class="page-btn" href="#">申请入驻</a>
+					<span class="arrow-down"></span>
+				</div>
+			</div>
+			<div class="swiper-slide page page2">
+				<div class="slide-page">
+					<p class="page234-tit1">财富号自媒体平台</p>
+					<div class="page234-content">
+						东方财富网旗下财经自媒体平台“财富号”，汇聚权威、全面、专业的财经自媒体，为中国广大投资者提供个性化、专业化的财经资讯和一站式金融理财服务。
+					</div>
+					<img class="page2-img1" src="img/propaganda/page2-img1.png" alt="">
+					<a class="page-btn" href="#">申请入驻</a>
+					<span class="arrow-down"></span>
+				</div>
+				<span class="arrow-down"></span>
+			</div>
+			<div class="swiper-slide page page3">
+				<div class="slide-page">
+					<p class="page234-tit1">财富号特权</p>
+					<div class="page234-content">申请财富号后，我们会为您提供以下特权：</div>
+					<ul class="page3-ulbox">
+						<li>
+							<p class="page3-lip">个人品牌</p>
+							<div class="page3-content">海量访问，助您打造 个人品牌获取粉丝</div>
+						</li>
+						<li>
+							<p class="page3-lip">变现方式</p>
+							<div class="page3-content">平台提供多种变现方式供您选择</div>
+						</li>
+						<li>
+							<p class="page3-lip">优质服务</p>
+							<div class="page3-content">文章数据、优先发布 粉丝管理等多种服务</div>
+						</li>
+						<li>
+							<p class="page3-lip">推广渠道</p>
+							<div class="page3-content">您的文章将会展示在 首页、股吧、推荐板块</div>
+						</li>
+					</ul>
+					<a class="page-btn" href="#">申请入驻</a>
+					<span class="arrow-down"></span>
+				</div>
+			</div>
+			<div class="swiper-slide page page4">
+				<p class="page234-tit1">财富号入驻大咖</p>
+				<div class="page234-content">这些财经媒体大咖都已入驻财富号：</div>
+				<a class="page-btn" href="#">申请入驻</a>
+				<ul class="page4-ulcontent">
+					<li>
+						<div class="right">
+							<p>叶檀财经</p>
+							<p>订阅人数3185人  文章数160篇</p>
+							<p>叶檀工作室</p>
+						</div>
+					</li>
+					<li>
+						<div class="right">
+							<p>叶檀财经</p>
+							<p>订阅人数3185人  文章数160篇</p>
+							<p>叶檀工作室</p>
+						</div>
+					</li>
+					<li>
+						<div class="right">
+							<p>叶檀财经</p>
+							<p>订阅人数3185人  文章数160篇</p>
+							<p>叶檀工作室</p>
+						</div>
+					</li>
+				</ul>
+				<ul class="page4-bottomul">
+					<li>目前app仅支持个人财富号入驻申请，机构入驻请登录网站</li>
+					<li>http://www.eastmoney.com/</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript">
+//滚动
+var mySwiper = new Swiper('#stage-swiper', {
+	direction: 'vertical',
+	noSwiping : true,
+	noSwipingClass : 'stop-swiping'
+});
+
+$(".page1-ulbox li").click(function(){
+	var index=$(this).index();
+	mySwiper.slideTo(index+1, 1000, false);
+})
+$(".arrow-down").click(function(){
+	mySwiper.slideNext();
+})
+</script>
+</body>
+</html>
