@@ -4,44 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>双飞翼布局</title>
   <style>
     *{
       margin: 0;
       padding: 0;
     }
-    .main-con{
-      margin: 0 200px;
-      background: lightsalmon;
-    }
-    .main,.left,.right{
-      float: left;
-      height: 50px;
-      position: relative;
-    }
-    .main{
-      width: 100%;
-      background: #ccc;
-    }
-    .left{
-      width: 200px;
-      background: #b11;
-      margin-left: -100%;
-    }
-    .right{
-      width: 200px;
-      background: green;
-      margin-left: -200px;
-    }
+	.middle{
+	    float:left;
+	    width:100%;/*左栏上去到第一行*/     
+	    height:100px;
+	    background:blue;
+	}
+	.left{
+	    float:left;
+	    width:180px;
+	    height:100px;
+	    margin-left:-100%;
+	    background:#0c9;
+	}
+	.right{
+	    float:left;
+	    width:200px;
+	    height:100px;
+	    margin-left:-200px;
+	    background:#0c9;
+	}
+	/*给内部div添加margin，把内容放到中间栏，其实整个背景还是100%*/ 
+	.middle .inside{
+	    margin:0 200px 0 180px;
+	    height:100px;
+	}
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="main">
-        <div class="main-con">main</div>
-    </div>
-    <div class="left">left</div>
-    <div class="right">right</div>
+  <div id="middle">
+    <div id="inside">middle</div>
   </div>
+  <div id="left">left</div>
+  <div id="right">right</div>
 </body>
 </html>

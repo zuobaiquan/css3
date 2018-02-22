@@ -4,43 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>圣杯布局</title>
   <style>
     *{
       margin: 0;
       padding: 0;
     }
-    .container{
-      padding: 0 200px;
-    }
-    .main,.left,.right{
-      float: left;
-      height: 50px;
-      position: relative;
-    }
-    .main{
-      width: 100%;
-      background: #ccc;
-    }
-    .left{
-      width: 200px;
-      background: #b11;
-      margin-left: -100%;
-      left: -200px;
-    }
-    .right{
-      width: 200px;
-      background: green;
-      margin-left: -200px;
-      right: -200px;
-    }
+	.bd{
+	    /*左右栏通过添加负的margin放到正确的位置了，此段代码是为了摆正中间栏的位置*/
+	    padding:0 200px 0 180px;
+	    height:100px;
+	}
+	.middle{
+	    float:left;
+	    width:100%;/*左栏上去到第一行*/
+	    height:100px;
+	    background:blue;
+	}
+	.left{
+	    float:left;
+	    width:180px;
+	    height:100px;
+	    margin-left:-100%;
+	    background:#0c9;
+	    /*中间栏的位置摆正之后，左栏的位置也相应右移，通过相对定位的left恢复到正确位置*/
+	    position:relative;
+	    left:-180px;
+	}
+	.right{
+	    float:left;
+	    width:200px;
+	    height:100px;
+	    margin-left:-200px;
+	    background:#0c9;
+	    /*中间栏的位置摆正之后，右栏的位置也相应左移，通过相对定位的right恢复到正确位置*/
+	    position:relative;
+	    right:-200px;
+	}
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="main">main</div>
-    <div class="left">left</div>
-    <div class="right">right</div>
-  </div>
+<div class="bd">
+  <div class="middle">middle</div>
+  <div class="left">left</div>
+  <div class="right">right</div>
+</div>
 </body>
 </html>
