@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      padding: 0 200px;
+    }
+    .main,.left,.right{
+      float: left;
+      height: 50px;
+      position: relative;
+    }
+    .main{
+      width: 100%;
+      background: #ccc;
+    }
+    .left{
+      width: 200px;
+      background: #b11;
+      margin-left: -100%;
+      left: -200px;
+    }
+    .right{
+      width: 200px;
+      background: green;
+      margin-left: -200px;
+      right: -200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="main">main</div>
+    <div class="left">left</div>
+    <div class="right">right</div>
+  </div>
+</body>
+</html>
