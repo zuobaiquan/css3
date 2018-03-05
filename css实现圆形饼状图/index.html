@@ -3,9 +3,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>纯CSS3实现的饼形图效果</title>
 <style>
-body {
-	font-family:Tahoma, Geneva, sans-serif;
-}
 .chart {
 	position:relative;
 	width:200px;
@@ -24,39 +21,31 @@ body {
 	width:200px;
 	height:200px;
 	clip:rect(0px,100px,200px,0px);
-	-webkit-border-radius:100px; 
-	border-radius:100px; 
-}
-#two .pie {
-	background-color:orange;
-	-webkit-transform:rotate(100deg);
-	transform:rotate(100deg);
+	border-radius:100px;
 }
 #one {
-	-webkit-transform:rotate(100deg);
 	transform:rotate(100deg);
 }
 #one .pie {
 	background-color:blue;
-	-webkit-transform:rotate(120deg);
 	transform:rotate(120deg);
 }
+#two .pie {
+	background-color:orange;
+	transform:rotate(100deg);
+}
 #three {
-	-webkit-transform:rotate(220deg);
 	transform:rotate(220deg);
 }
 #three .pie {
 	background-color:purple;
-	-webkit-transform:rotate(60deg);
 	transform:rotate(60deg);
 }
 #four {
-	-webkit-transform:rotate(280deg); 
-	transform:rotate(280deg); 
+	transform:rotate(280deg);
 }
 #four .pie {
 	background-color:grey;
-	-webkit-transform:rotate(80deg); 
 	transform:rotate(80deg);
 }
 </style>
