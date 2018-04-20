@@ -1,11 +1,11 @@
-.search_checkbox input[type=checkbox]{
+.switch-wrap input[type=checkbox]{
   height: 0px;
   width: 0px;
   visibility: hidden;
   margin:0;
   padding:0;
 }
-.search_checkbox label{
+.switch-wrap label{
   display: inline-block;
   width: 52px;
   height: 32px;
@@ -19,7 +19,7 @@
   vertical-align: middle;
   position: relative;
 }
-.search_checkbox label::before {
+.switch-wrap label::before {
   content: '';
   position: absolute;
   top: 0;
@@ -31,9 +31,9 @@
   box-shadow: 0 1px 3px rgba(0,0,0,0.4);
   background-color: #fff;
 }
-.search_checkbox input:checked + label {
+.switch-wrap input:checked + label {
   background: #33DB70;
 }
-.search_checkbox input:checked + label:before {
+.switch-wrap input:checked + label:before {
   transform: translateX(20px);
 }
