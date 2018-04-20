@@ -1,0 +1,32 @@
+.switch-wrap{
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 32px;
+  border: 1px solid #DFDFDF;
+  outline: none;
+  border-radius: 16px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  cursor: pointer;
+  transition: border-color .3s,background-color .3s;
+  vertical-align: middle;
+}
+.switch-wrap span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  background-color: #fff;
+}
+.switch-wrap.active{
+  border-color: #33DB70;
+  background-color: #33DB70;
+}
+.switch-wrap.active span{
+  transform: translateX(20px);
+}
