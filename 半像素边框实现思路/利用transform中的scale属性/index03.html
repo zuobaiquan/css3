@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+  <title></title>
+  <style media="screen" type="text/css">
+    /* 用::after设置border：1px solid #000; width:200%; height:200%,然后再缩放scaleY(0.5); 优点可以实现圆角，比较好的用法，缺点是点击涉及层级问题。 */
+    .box{
+      position: relative;
+      margin-top:50%;
+    }
+    .box::after{
+      content: '';
+      width: 200%;
+      height: 200%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+      border-top: 1px solid #262626;
+      border-bottom: 1px solid #262626;
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5);
+      transform-origin: top left;
+      -webkit-transform-origin: top left;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

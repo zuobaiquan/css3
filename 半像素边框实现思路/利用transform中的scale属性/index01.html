@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+  <title></title>
+  <style media="screen" type="text/css">
+    body{
+      padding:50% 0;
+    }
+    /* 用height：1px的div，然后根据媒体查询设置transform: scaleY(0.5); */
+    .box{
+      height:1px;
+      background:#000;
+      transform: scaleY(0.5);
+      -webkit-transform: scaleY(0.5);
+      transform-origin:0 0;
+      -webkit-transform-origin:0 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
