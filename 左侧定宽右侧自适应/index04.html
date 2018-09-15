@@ -6,21 +6,18 @@
     <style media="screen">
     *{margin: 0;padding: 0;}
     .left{
-        position: absolute;
-        top: 0;
-        left: 0;
+        float: left;
         width: 200px;
         border: 1px solid #333;
     }
     .right{
-        margin-left:200px;
+        overflow: hidden;
         border: 1px solid #333;
-        word-break: break-all;
     }
     </style>
   </head>
   <body>
-    <!-- 方法二 ：左边使用绝对定位，右边margin-left  -->
+    <!-- 方法四 ：左边左浮动，右边 overflow：hidden  -->
     <div class="left">
       <p>左左左左左左左左左左左左左左左左左左左左左左左左左左左左左左左左左左左左左左左左左左</p>
     </div>
