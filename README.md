@@ -1,3 +1,5 @@
+### css教程 http://caibaojian.com/30-seconds-of-css/
+
 ## 原文链接：http://www.cnblogs.com/coco1s
 
 你想知道的 CSS 奇技淫巧，在这里，都有。
