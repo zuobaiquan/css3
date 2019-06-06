@@ -1,3 +1,6 @@
+如果觉得对你帮助，记得打赏哦。
+
+![591517660778_.pic](https://zuobaiquan.com/blogImg/CSS/pay.png)
 ### css教程 http://caibaojian.com/30-seconds-of-css/
 
 ## 原文链接：http://www.cnblogs.com/coco1s
